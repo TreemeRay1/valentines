@@ -1,0 +1,85 @@
+body {
+    background-color: #ffd1dc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    color: #d63384;
+}
+
+.main-gif {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #ff69b4;
+    border: none;
+    padding: 10px 20px; /* Redus dimensiunea butoanelor */
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 350px; /* Popup mai mare */
+}
+
+.popup img {
+    width: 180px; /* Imaginile popup mai mari */
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 20px;
+    color: #d63384;
+    font-weight: bold;
+}
+
+.popup .btn {
+    margin-top: 10px;
+    font-size: 14px; /* Butoane popup mai mici */
+    padding: 8px 15px;
+}
+
+.hidden {
+    display: none !important;
+}
